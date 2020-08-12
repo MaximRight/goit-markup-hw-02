@@ -8,3 +8,14 @@
 	display: flex;
 	flex-direction: row;
 } */
+
+.portfolio-links {
+  color: teal;
+  border: 2px solid blue;
+}
+
+.portfolio-links:hover,
+.portfolio-links:focus {
+  color: tomato;
+  border: 2px solid tomato;
+}
