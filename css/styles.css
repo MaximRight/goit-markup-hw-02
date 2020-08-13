@@ -1,21 +1,130 @@
-/* * {
-	padding: 0%;
-	margin: 0;
-	box-sizing: border-box;
-} */
-
-/* .fdiv {
-	display: flex;
-	flex-direction: row;
-} */
-
-.portfolio-links {
-  color: teal;
-  border: 2px solid blue;
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--white-color: #ffffff;
 }
+
+body {
+	background-color: #e5e5e5;
+	color: var(--primary-text-color);
+}
+
+.logo.main {
+	color: var(--accent-color);
+}
+
+.logo.header {
+	color: var(--title-text-color);
+}
+
+.logo.footer {
+	color: var(--white-color);
+}
+
+/* это сброс маркеров для всех списков вообще */
+ul {
+	list-style: none;
+}
+/* можно через классы .list задавать тот же сброс точек */
+
+/* Site Nav */
+
+.site-nav .link {
+	color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+
+.site-nav .link.current {
+	color: var(--accent-color);
+}
+
+.contacts-nav .link {
+	color: var(--primary-text-color);
+}
+
+.contacts-nav .link:hover {
+	color: var(--accent-color);
+}
+
+/* Hero css */
+
+.hero-title {
+	color: #ffffff;
+}
+
+/* Section  and What We Do*/
+
+.section-title {
+	color: var(--title-text-color);
+}
+
+/* Features */
+
+.feature-list .title {
+	color: var(--title-text-color);
+}
+
+/* Our Team*/
+
+.team-list .title {
+	color: var(--title-text-color);
+}
+
+/* Footer */
+
+.footer-links .address {
+	color: #ffffff;
+}
+
+.footer-links .title {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+
+.portfolio-list .title {
+	color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+	color: var(--white-color);
+
+	background-color: var(--accent-color);
+}
+
+/* если несколько кнопок то в главном селекторе выстраивается шрифты и рамки и так далее, а во второстепенных .button.primary .button.secondary - выстраиваются отличающиеся цвета */
+
+/* .weblogo {
+  color: #2196f3;
+} */
+
+/* цвет Хэдеров
+color: #212121 */
+/* Цвет абзацев
+color: #757575; */
+/* Цвет героя и лого и адреса
+color: #FFFFFF; 
+color: #2196F3; также это цвет ховера и фокуса и активного (акцент)
+*/
+/* Цвет ссылок в футере
+color: rgba(255, 255, 255, 0.6); */
+/* вторая секция
+#e5e5e5 */
+/* вторичный цвет фона
+background: #F5F4FA; */
+
+/* .portfolio-list {
+	color: teal;
+	border: 2px solid blue; }
 
 .portfolio-links:hover,
 .portfolio-links:focus {
-  color: tomato;
-  border: 2px solid tomato;
-}
+	color: tomato;
+	border: 2px solid tomato; } */
