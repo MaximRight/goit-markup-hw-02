@@ -3,16 +3,30 @@
 	--title-text-color: #212121;
 	--accent-color: #2196f3;
 	--white-color: #ffffff;
+	--button-bcg: #f5f4fa;
 }
 
 body {
 	background-color: #e5e5e5;
 	color: var(--primary-text-color);
+
+	font-family: roboto, sans-serif;
+	letter-spacing: 0.03em;
 }
 
-.logo.main {
+/* LOGO */
+
+.logo {
+	font-family: "Raleway", sans-serif;
 	color: var(--accent-color);
+
+	font-size: 26px;
+	line-height: 1.19;
 }
+
+/* .logo.main {
+	color: var(--accent-color);
+} */
 
 .logo.header {
 	color: var(--title-text-color);
@@ -32,6 +46,11 @@ ul {
 
 .site-nav .link {
 	color: var(--title-text-color);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -45,6 +64,11 @@ ul {
 
 .contacts-nav .link {
 	color: var(--primary-text-color);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .contacts-nav .link:hover {
@@ -55,24 +79,68 @@ ul {
 
 .hero-title {
 	color: #ffffff;
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+
+.hero .order {
+	color: var(--white-color);
+	background-color: var(--accent-color);
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+
+	letter-spacing: 0.06em;
 }
 
 /* Section  and What We Do*/
 
 .section-title {
 	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
 }
 
 /* Features */
 
 .feature-list .title {
 	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.feature-list p {
+	font-size: 14px;
+	line-height: 1.71;
 }
 
 /* Our Team*/
 
 .team-list .title {
 	color: var(--title-text-color);
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	/* text-align: center; */
+}
+
+.team-list p {
+	font-size: 16px;
+	line-height: 1.19;
+	/* text-align: center; */
 }
 
 /* Footer */
@@ -85,46 +153,41 @@ ul {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/* Portfolio */
+/* Buttons */
 
-.portfolio-list .title {
+.buttons button {
 	color: var(--title-text-color);
+	background-color: var(--button-bcg);
+
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
 }
 
-/* Button */
-
-.button {
+.buttons button:hover,
+.buttons button:focus {
 	color: var(--white-color);
-
 	background-color: var(--accent-color);
 }
 
 /* если несколько кнопок то в главном селекторе выстраивается шрифты и рамки и так далее, а во второстепенных .button.primary .button.secondary - выстраиваются отличающиеся цвета */
 
-/* .weblogo {
-  color: #2196f3;
-} */
+/* Portfolio */
 
-/* цвет Хэдеров
-color: #212121 */
-/* Цвет абзацев
-color: #757575; */
-/* Цвет героя и лого и адреса
-color: #FFFFFF; 
-color: #2196F3; также это цвет ховера и фокуса и активного (акцент)
-*/
-/* Цвет ссылок в футере
-color: rgba(255, 255, 255, 0.6); */
-/* вторая секция
-#e5e5e5 */
-/* вторичный цвет фона
-background: #F5F4FA; */
+.portfolio-list .title {
+	color: var(--title-text-color);
 
-/* .portfolio-list {
-	color: teal;
-	border: 2px solid blue; }
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
 
-.portfolio-links:hover,
-.portfolio-links:focus {
-	color: tomato;
-	border: 2px solid tomato; } */
+.portfolio-links p {
+	color: var(--primary-text-color);
+
+	font-size: 16px;
+	line-height: 1.87;
+	text-decoration: none;
+}
