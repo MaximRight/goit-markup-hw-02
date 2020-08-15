@@ -35,12 +35,9 @@ ul {
 	text-decoration: none;
 }
 
-/* .logo.main {
-	color: var(--accent-color);
-} */
-
 .logo.header {
 	color: var(--title-text-color);
+	font-size: 26px;
 }
 
 .logo.footer {
