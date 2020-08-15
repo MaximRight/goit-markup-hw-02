@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #e5e5e5;
+	background-color: #e5e5e5fd;
 	color: var(--primary-text-color);
 
 	font-family: roboto, sans-serif;
@@ -22,6 +22,7 @@ body {
 
 	font-size: 26px;
 	line-height: 1.19;
+	text-decoration: none;
 }
 
 /* .logo.main {
@@ -51,6 +52,7 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -69,6 +71,7 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	text-decoration: none;
 }
 
 .contacts-nav .link:hover {
@@ -143,14 +146,8 @@ ul {
 	/* text-align: center; */
 }
 
-/* Footer */
-
-.footer-links .address {
-	color: #ffffff;
-}
-
-.footer-links .title {
-	color: rgba(255, 255, 255, 0.6);
+.team {
+	background-color: var(--button-bcg);
 }
 
 /* Buttons */
@@ -184,10 +181,29 @@ ul {
 	letter-spacing: 0.06em;
 }
 
-.portfolio-links p {
+.portfolio-links a {
 	color: var(--primary-text-color);
 
 	font-size: 16px;
 	line-height: 1.87;
+	text-decoration: none;
+}
+
+/* Footer */
+
+.footer-links .address {
+	color: #ffffff;
+
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+}
+
+.footer-links .title {
+	color: rgba(255, 255, 255, 0.6);
+
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
 	text-decoration: none;
 }
