@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
@@ -16,6 +22,8 @@ body {
 
 /* это сброс маркеров для всех списков вообще */
 ul {
+	margin: 0px;
+	padding: 0px;
 	list-style: none;
 }
 /* можно через классы .list задавать тот же сброс точек */
@@ -24,7 +32,26 @@ ul {
 	display: none;
 }
 
-/* LOGO */
+/* Special Container */
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+	outline: 2px solid tomato;
+}
+
+/* Page header */
+
+.page-header {
+	background-color: wheat;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* Logo */
 
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -45,6 +72,10 @@ ul {
 }
 
 /* Site Nav */
+
+.navbar {
+	margin-bottom: 30px;
+}
 
 .site-nav .link {
 	color: var(--title-text-color);
@@ -81,18 +112,25 @@ ul {
 
 /* Hero css */
 
+.hero {
+	text-align: center;
+}
+
 .hero-title {
-	color: #ffffff;
+	color: var(--white-color);
 
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
+
+	margin-top: 0px;
+	margin-bottom: 30px;
+	outline: 1px solid tomato;
 }
 
-.order {
+.btn {
 	color: var(--white-color);
 	background-color: var(--accent-color);
 
@@ -101,23 +139,26 @@ ul {
 	line-height: 1.87;
 	letter-spacing: 0.06em;
 
-	display: inline;
-	padding: 16px 32px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 32px;
 	border-radius: 4px;
-}
-
-/* Section  and What We Do*/
-
-.section-title {
-	color: var(--title-text-color);
-
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
-	text-align: center;
+	min-width: 204px;
+	border: 1px solid transparent;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features */
+
+/* .section.features {
+	padding-top: 94px;
+	padding-bottom: 94px;
+} */
+
+.feature-list {
+	margin-top: 0px;
+	margin-bottom: 94px;
+}
 
 .feature-list .title {
 	color: var(--title-text-color);
@@ -126,14 +167,43 @@ ul {
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
+
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .feature-list p {
 	font-size: 14px;
 	line-height: 1.71;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-/* Our Team*/
+/* What We Do and Team Headers*/
+
+.section-title {
+	color: var(--title-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+/* Section Team*/
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.team-list img {
+	margin-bottom: 30px;
+}
 
 .team-list .title {
 	color: var(--title-text-color);
@@ -142,19 +212,25 @@ ul {
 	font-size: 16px;
 	line-height: 1.19;
 	/* text-align: center; */
+
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .team-list p {
 	font-size: 16px;
 	line-height: 1.19;
 	/* text-align: center; */
+
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .team {
 	background-color: var(--button-bcg);
 }
 
-/* Buttons */
+/* Buttons Filters */
 
 .buttons button {
 	color: var(--title-text-color);
@@ -164,6 +240,10 @@ ul {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
+
+	/* display: inline-block; */
+	padding: 6px 22px;
+	border-radius: 4px;
 }
 
 .buttons button:hover,
@@ -195,7 +275,25 @@ ul {
 
 /* Footer */
 
-.footer-links .address {
+.footbar {
+	background-color: teal;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footbar a {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.footer-links a,
+.coord {
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 9px;
+}
+
+.footer-links .coord {
 	color: #ffffff;
 
 	font-style: normal;
@@ -211,8 +309,5 @@ ul {
 	line-height: 1.71;
 	text-decoration: none;
 }
-.outer-box {
-	width: 200px;
-	height: 200px;
-	background-color: teal;
-}
+
+/* Experiments */
